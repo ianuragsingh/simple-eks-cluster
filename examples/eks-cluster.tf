@@ -1,4 +1,4 @@
-module "public_eks_cluster" {
+module "eks_cluster" {
   source         = "../../"
   vpc_name       = "my-vpc"
   cluster_name   = "simple-eks-cluster"
