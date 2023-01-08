@@ -51,7 +51,7 @@ variable "min_size" {
 variable "instance_types" {
   description = "List of instance types associated with the EKS Node Group. the default vaule is [\"t3.medium\"]. Terraform will only perform drift detection if a configuration value is provided."
   type        = list(string)
-  default     = ["t3.medium"]
+  default     = ["t3.small"]
 
 }
 
