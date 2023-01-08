@@ -12,7 +12,7 @@ variable "vpc_name" {
   default     = "my-vpc"
 }
 
-variable "vpc_name" {
+variable "create_vpc" {
   description = "Flag to create vpc, default false"
   type        = bool
   default     = false
