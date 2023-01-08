@@ -4,8 +4,8 @@ locals {
 }
 
 module "vpc" {
-  source                  = source = "terraform-aws-modules/vpc/aws"
-  version                 = ">3.16.0"
+  source  = "terraform-aws-modules/vpc/aws"
+  version = ">3.18.0"
 
   create_vpc              = var.create_vpc
   name                    = var.vpc_name
