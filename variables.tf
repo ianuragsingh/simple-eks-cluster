@@ -26,8 +26,8 @@ variable "vpc_cidr" {
 
 variable "subnet_ids" {
   description = "Subnet ids of cluster resources"
-  type        = bool
-  default     = false
+  type        = list(string)
+  default     = []
 }
 
 variable "desired_size" {
