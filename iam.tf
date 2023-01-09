@@ -7,7 +7,7 @@ locals {
 #---------------Cluster IAM Role-----------------------
 
 resource "aws_iam_role" "cluster_role" {
-  name        = coalesce(var.cluster_iam_role, "{var.cluster_name}-role")
+  name        = coalesce(var.cluster_iam_role, "${var.cluster_name}-role")
   description = "IAM Role for the EKS Cluster named ${var.cluster_name}"
 
   assume_role_policy    = data.aws_iam_policy_document.eks_assume_role_policy.json
